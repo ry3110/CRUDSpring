@@ -30,13 +30,17 @@ public class ProductEntity {
     private String name;
     private int quantity;
     private double price;
+    private boolean inStock;
 
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
+
     public String getName() {
         return name;
     }
@@ -54,6 +58,14 @@ public class ProductEntity {
     }
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void setInStock(boolean inStock) {
+        this.inStock = inStock;
+    }
+
+    public boolean getInStock() {
+        return inStock;
     }
 
 
